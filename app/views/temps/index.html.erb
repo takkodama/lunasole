@@ -1,0 +1,9 @@
+<h2>temps at lunasole</h2>
+<table>
+  <% @temps.each do |temp| %>
+    <tr>
+      <td><%= temp.degree %></td>
+      <td><%= temp.yyyymmddhh %></td>
+    </tr>
+  <% end %>
+</table>
