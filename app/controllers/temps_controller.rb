@@ -6,9 +6,10 @@ class TempsController < ApplicationController
 
   def create
     # save
-    @temps = Temp.new(params.require(:post).permit(:degree, :yyyymmddhh))
+    @temps = Temp.new()
     @temps.save
+
     # redirect
-    redirect_to temps_path
+    # redirect_to temps_path
   end
 end
